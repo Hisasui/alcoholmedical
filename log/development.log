@@ -1,0 +1,67 @@
+Started GET "/" for 127.0.0.1 at 2018-11-03 21:07:26 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hisashi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hisashi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (13.0ms)
+Completed 200 OK in 449ms (Views: 32.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-17 20:53:49 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hisashi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hisashi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 459ms (Views: 20.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2018-11-17 21:08:31 +0900
+  
+ArgumentError (You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/hello" for 127.0.0.1 at 2018-11-17 21:15:14 +0900
+Processing by AlcoholcheckController#hello as HTML
+Completed 500 Internal Server Error in 328ms
+
+
+  
+ActionView::MissingTemplate (Missing template alcoholcheck/hello, application/hello with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/hisashi/develope/alcoholcheck/app/views"
+):
+  
+app/controllers/alcoholcheck_controller.rb:4:in `hello'
+Started GET "/bye" for 127.0.0.1 at 2018-11-17 21:16:20 +0900
+Processing by AlcoholcheckController#bye as HTML
+Completed 500 Internal Server Error in 28ms
+
+
+  
+ActionView::MissingTemplate (Missing template alcoholcheck/bye, application/bye with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/hisashi/develope/alcoholcheck/app/views"
+):
+  
+app/controllers/alcoholcheck_controller.rb:8:in `bye'
+Started GET "/hello" for 127.0.0.1 at 2018-11-17 21:23:50 +0900
+Processing by AlcoholcheckController#hello as HTML
+  Rendering alcoholcheck/hello.html.erb within layouts/application
+  Rendered alcoholcheck/hello.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1266ms (Views: 1260.4ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2018-11-19 21:47:44 +0900
+Processing by AlcoholcheckController#hello as HTML
+  Rendering alcoholcheck/hello.html.erb within layouts/application
+  Rendered alcoholcheck/hello.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 624ms (Views: 318.7ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2018-11-19 21:49:59 +0900
+Processing by AlcoholcheckController#hello as HTML
+  Rendering alcoholcheck/hello.html.erb within layouts/application
+  Rendered alcoholcheck/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 49.9ms)
+
+

@@ -1,0 +1,2 @@
+module AlcoholcheckHelper
+end
